@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css_Js/Css/navbar.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>dropDown</title>
+    <style>
+        .drbutton:hover .drpmanu {
+            display: block;
+            /* opacity: 1; */
+        }
+
+        .drbutton1:hover .drpmanu1 {
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-md">
+        <div class="dropdown drbutton">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                Dropdown link
+            </a>
+            <ul class="dropdown-menu drpmanu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li class="dropdown"><a class="dropdown-item" href="#">DropDown</a></li>
+                <li class="dropdown dropend drbutton1">
+                    <a href="#" class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">One more
+                        dropdown</a>
+                    <ul class="dropdown-menu drpmanu1 dropdown-menu-right class=" pull-right""
+                        aria-labelledby="dropdownMenuLink">
+                        <li class="pull-right"><a href="#">Action</a></li>
+                        <li class="pull-right"><a href="#">Another action</a></li>
+                        <li class="pull-right"><a href="#">Something else here</a></li>
+                        <li class="pull-right"><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- <div class="dropdown drbutton1 dropend">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false" data-bs-auto-close="outside">
+            Dropdown linkdsd
+        </a>
+        <ul class="dropdown-menu drpmanu1" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div> -->
+
+    <br>
+
+    <div class="container-md">
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false">
+                Dropdown link
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <div class="dropdown dropend">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false">
+                        Dropdown linkdsd
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="Css_js/Js/navbar.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
